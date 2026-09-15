@@ -302,9 +302,11 @@ function runCalculation(params) {
     document.getElementById("variabile-rata").textContent = `${fmtEur(rataVariabile)} / mese`;
   }
 
-  renderScenarioChart(rataAttuale, rataFissa, rataVariabile);
-
+  // Il contenitore va reso visibile PRIMA di creare il grafico: Chart.js
+  // misura le dimensioni del canvas al momento della creazione e non le
+  // ricalcola correttamente se all'inizio è dentro un elemento "hidden".
   document.getElementById("result-block").hidden = false;
+  renderScenarioChart(rataAttuale, rataFissa, rataVariabile);
 }
 
 function renderScenarioChart(rataAttuale, rataFissa, rataVariabile) {
