@@ -35,6 +35,7 @@ mercato pubblicati.
 | Euribor 6 mesi | [euribor-rates.eu](https://www.euribor-rates.eu/en/current-euribor-rates/3/euribor-rate-6-months/) | giornaliera | Riporta il fixing ufficiale EMMI |
 | IRS 3 anni | [casaninja.it](https://casaninja.it/tassi/irs/3-anni) | giornaliera | Dato di mercato aggregato: **nessuna fonte istituzionale pubblica gratuitamente il fixing IRS in tempo reale** |
 | Euribor 6M (media mensile) | [ECB Data Portal](https://data.ecb.europa.eu/) (BCE, via API SDMX ufficiale) | mensile | Riferimento istituzionale di verifica incrociata |
+| Confronto banche | [telemutuo.it](https://www.telemutuo.it/) | giornaliera (snapshot, non storico) | Aggregatore di offerte reali di mercato per un profilo standard; **non** è il foglio informativo ufficiale di ciascuna banca — molte grandi banche (Intesa Sanpaolo compresa) non pubblicano un link pubblico stabile al proprio documento di trasparenza, quindi questo è il miglior compromesso pubblico disponibile |
 
 Se una di queste pagine cambia struttura, lo script corrispondente
 (`scripts/fetch_euribor.py`, `scripts/fetch_irs.py`) fallirà con un errore

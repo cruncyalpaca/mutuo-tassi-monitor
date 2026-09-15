@@ -15,6 +15,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
+from fetch_bank_rates import PROFILO_ESEMPIO, fetch_bank_rates
 from fetch_ecb_monthly import fetch_ecb_euribor_6m_monthly
 from fetch_euribor import fetch_euribor_6m
 from fetch_irs import fetch_irs_3y
@@ -96,6 +97,34 @@ def process_ecb_reference():
     print(f"[BCE - media mensile] Ultimo valore: {merged[-1]['date']} = {merged[-1]['value']}%")
 
 
+def process_bank_rates():
+    """Aggiorna lo "scatto" (non uno storico) delle offerte mutuo delle
+    banche: a differenza degli indici, qui ci interessa solo l'ultima
+    situazione di mercato disponibile, non l'andamento nel tempo."""
+    import json as _json
+    from datetime import date
+
+    try:
+        offers = fetch_bank_rates()
+    except Exception as exc:
+        print(f"[Confronto banche] ERRORE: {exc}")
+        return
+
+    snapshot = {
+        "aggiornato": date.today().isoformat(),
+        "fonte": "https://www.telemutuo.it/",
+        "profilo_esempio": PROFILO_ESEMPIO,
+        "offerte": offers,
+    }
+
+    path = DATA_DIR / "bank_rates.json"
+    with open(path, "w", encoding="utf-8") as f:
+        _json.dump(snapshot, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
+    print(f"[Confronto banche] {len(offers)} offerte aggiornate.")
+
+
 def main():
     if os.environ.get("TEST_TELEGRAM", "").lower() == "true":
         token = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -117,6 +146,7 @@ def main():
     process_series("Euribor 6 mesi", "euribor_6m.json", fetch_euribor_6m, alerts)
     process_series("IRS 3 anni", "irs_3y.json", fetch_irs_3y, alerts)
     process_ecb_reference()
+    process_bank_rates()
 
     if alerts:
         message = "Cambiamento significativo nei tassi mutuo:\n\n" + "\n".join(alerts)

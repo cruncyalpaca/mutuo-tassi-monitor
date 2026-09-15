@@ -40,6 +40,32 @@
     <p class="chart-note">Fonti: Euribor 6M da euribor-rates.eu (fixing EMMI, aggiornamento quotidiano); IRS 3A da casaninja.it (dato di mercato, nessuna fonte ufficiale gratuita in tempo reale). Vedi il piè di pagina per i dettagli.</p>
   </section>
 
+  <section class="card" id="banks-card" aria-label="Confronto con le banche">
+    <h2>Confronto con le banche</h2>
+    <p class="card-intro" id="banks-intro">Caricamento...</p>
+    <div class="table-scroll">
+      <table class="banks-table" id="banks-table">
+        <thead>
+          <tr>
+            <th>Banca</th>
+            <th>Prodotto</th>
+            <th>Tipo</th>
+            <th>Operazione</th>
+            <th>TAN</th>
+            <th>TAEG</th>
+            <th>Rata esempio</th>
+          </tr>
+        </thead>
+        <tbody id="banks-tbody">
+          <tr><td colspan="7">Caricamento dati...</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="chart-note">
+      Fonte: <a href="https://www.telemutuo.it/" target="_blank" rel="noopener">telemutuo.it</a> (aggregatore di offerte di mercato, non il foglio informativo ufficiale di ciascuna banca — molte grandi banche, tra cui Intesa Sanpaolo, non pubblicano un link pubblico stabile al proprio documento). Le condizioni reali che ti verranno proposte in filiale possono differire da questi valori "esempio": dipendono dal tuo profilo di rischio, dal loan-to-value, da eventuali sconti "green" sull'immobile e da promozioni del momento — esattamente come hai visto succedere con la tua offerta.
+    </p>
+  </section>
+
   <section class="card" id="calculator-card" aria-label="Calcolatore personale del mutuo">
     <h2>Il tuo mutuo</h2>
     <p class="card-intro">
@@ -133,6 +159,7 @@
       <li>Euribor 6 mesi (fixing giornaliero EMMI) — <a href="https://www.euribor-rates.eu/en/current-euribor-rates/3/euribor-rate-6-months/" target="_blank" rel="noopener">euribor-rates.eu</a></li>
       <li>IRS / Eurirs 3 anni (dato di mercato aggregato) — <a href="https://casaninja.it/tassi/irs/3-anni" target="_blank" rel="noopener">casaninja.it</a></li>
       <li>Media mensile ufficiale Euribor 6M — <a href="https://data.ecb.europa.eu/" target="_blank" rel="noopener">Banca Centrale Europea, ECB Data Portal</a></li>
+      <li>Confronto offerte mutuo banche italiane (aggregatore di mercato) — <a href="https://www.telemutuo.it/" target="_blank" rel="noopener">telemutuo.it</a></li>
     </ul>
     <p>Aggiornamento automatico giornaliero tramite GitHub Actions. Nessun dato personale è salvato in questo repository. Questo strumento non costituisce consulenza finanziaria: verifica sempre i valori contrattuali con la tua banca.</p>
   </div>

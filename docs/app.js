@@ -35,6 +35,54 @@ async function loadIndexData() {
   renderStatTiles();
   renderHistoryChart();
   updateLastUpdateLine();
+  loadBankRates();
+}
+
+/* ---------- Confronto con le banche ---------- */
+
+function escapeHtml(str) {
+  return str.replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  }[c]));
+}
+
+async function loadBankRates() {
+  const intro = document.getElementById("banks-intro");
+  const tbody = document.getElementById("banks-tbody");
+
+  let snapshot;
+  try {
+    snapshot = await loadJSON("data/bank_rates.json");
+  } catch (err) {
+    console.error(err);
+    intro.textContent = "Dati non ancora disponibili: attendi la prima esecuzione automatica.";
+    tbody.innerHTML = '<tr><td colspan="7">–</td></tr>';
+    return;
+  }
+
+  intro.innerHTML =
+    `Profilo di esempio: <strong>${snapshot.profilo_esempio}</strong> · ` +
+    `aggiornato al ${fmtDate(snapshot.aggiornato)}.`;
+
+  const offers = [...snapshot.offerte].sort((a, b) => a.taeg - b.taeg);
+
+  tbody.innerHTML = offers
+    .map((o) => {
+      const chipClass = o.tipo_tasso === "fisso" ? "rate-chip--fisso" : "rate-chip--variabile";
+      const opLabel = o.surroga ? "Surroga" : "Acquisto";
+      const rata = o.rata_mensile != null ? fmtEur(o.rata_mensile) : "–";
+      return `
+        <tr>
+          <td>${escapeHtml(o.banca)}</td>
+          <td class="prodotto-cell">${escapeHtml(o.prodotto)}</td>
+          <td><span class="rate-chip ${chipClass}">${o.tipo_tasso}</span></td>
+          <td><span class="op-chip">${opLabel}</span></td>
+          <td class="num">${o.tan.toFixed(2)}%</td>
+          <td class="num">${o.taeg.toFixed(2)}%</td>
+          <td class="num">${rata}${o.durata_anni ? ` / mese × ${o.durata_anni}a` : ""}</td>
+        </tr>`;
+    })
+    .join("");
 }
 
 function latestPoint(history) {
