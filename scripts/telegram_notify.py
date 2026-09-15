@@ -12,3 +12,5 @@ def send_telegram_message(token, chat_id, text):
     )
     if not response.ok:
         print(f"Errore invio Telegram: {response.status_code} {response.text}")
+        return False
+    return True

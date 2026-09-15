@@ -103,12 +103,12 @@ def main():
         if not token or not chat_id:
             print("Test Telegram richiesto ma i secret TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID non sono configurati.")
             return
-        send_telegram_message(
+        ok = send_telegram_message(
             token,
             chat_id,
             "Messaggio di test da Monitor Tassi Mutuo: la configurazione funziona correttamente.",
         )
-        print("Messaggio di test inviato su Telegram.")
+        print("Messaggio di test inviato su Telegram." if ok else "Invio del messaggio di test FALLITO (vedi errore sopra).")
         return
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
