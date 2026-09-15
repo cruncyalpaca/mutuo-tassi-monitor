@@ -9,6 +9,12 @@ on:
 permissions:
   contents: write
 
+# Evita che due esecuzioni sovrapposte (es. avvio manuale + cron, o due
+# avvii manuali ravvicinati) tentino di fare "git push" nello stesso momento.
+concurrency:
+  group: daily-check
+  cancel-in-progress: false
+
 jobs:
   check-rates:
     runs-on: ubuntu-latest
@@ -36,4 +42,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data/*.json
           git diff --quiet --cached || git commit -m "Aggiornamento dati tassi $(date -u +'%Y-%m-%d')"
+          # Se nel frattempo il branch remoto è avanzato (es. un push manuale
+          # quasi in contemporanea), riallinea prima di riprovare il push.
+          git pull --rebase origin main
           git push
