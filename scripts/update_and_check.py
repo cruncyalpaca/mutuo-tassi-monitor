@@ -97,6 +97,20 @@ def process_ecb_reference():
 
 
 def main():
+    if os.environ.get("TEST_TELEGRAM", "").lower() == "true":
+        token = os.environ.get("TELEGRAM_BOT_TOKEN")
+        chat_id = os.environ.get("TELEGRAM_CHAT_ID")
+        if not token or not chat_id:
+            print("Test Telegram richiesto ma i secret TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID non sono configurati.")
+            return
+        send_telegram_message(
+            token,
+            chat_id,
+            "Messaggio di test da Monitor Tassi Mutuo: la configurazione funziona correttamente.",
+        )
+        print("Messaggio di test inviato su Telegram.")
+        return
+
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     alerts = []

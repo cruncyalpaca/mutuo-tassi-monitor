@@ -4,7 +4,12 @@ on:
   schedule:
     # 06:30 UTC = 08:30 (CEST) / 07:30 (CET) ora italiana
     - cron: "30 6 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      test_telegram:
+        description: "Invia solo un messaggio di test su Telegram (per verificare la configurazione)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,6 +39,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TEST_TELEGRAM: ${{ inputs.test_telegram }}
         run: python scripts/update_and_check.py
 
       - name: Commit updated data
