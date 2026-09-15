@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitor Tassi Mutuo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="page-header">
+  <div class="wrap">
+    <h1>Monitor Tassi Mutuo</h1>
+    <p class="subtitle">Euribor 6 mesi e IRS (Eurirs) 3 anni, aggiornati ogni giorno · dati pubblici</p>
+    <p class="last-update" id="last-update">Caricamento dati...</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="stat-row" aria-label="Valori attuali degli indici">
+    <div class="stat-tile">
+      <span class="stat-label">Euribor 6 mesi</span>
+      <span class="stat-value" id="euribor-value">–</span>
+      <span class="stat-meta" id="euribor-meta">–</span>
+    </div>
+    <div class="stat-tile">
+      <span class="stat-label">IRS 3 anni</span>
+      <span class="stat-value" id="irs-value">–</span>
+      <span class="stat-meta" id="irs-meta">–</span>
+    </div>
+  </section>
+
+  <section class="card" aria-label="Andamento storico">
+    <h2>Andamento storico</h2>
+    <div class="chart-legend" id="history-legend"></div>
+    <div class="chart-box">
+      <canvas id="history-chart" role="img" aria-label="Grafico storico di Euribor 6 mesi e IRS 3 anni"></canvas>
+    </div>
+    <p class="chart-note">Fonti: Euribor 6M da euribor-rates.eu (fixing EMMI, aggiornamento quotidiano); IRS 3A da casaninja.it (dato di mercato, nessuna fonte ufficiale gratuita in tempo reale). Vedi il piè di pagina per i dettagli.</p>
+  </section>
+
+  <section class="card" id="calculator-card" aria-label="Calcolatore personale del mutuo">
+    <h2>Il tuo mutuo</h2>
+    <p class="card-intro">
+      Questi dati restano <strong>solo nel tuo browser</strong> (non vengono mai inviati altrove né salvati in questo repository):
+      inseriscili una volta, si ricalcola tutto automaticamente ogni volta che apri questa pagina, usando gli ultimi
+      valori di indice raccolti dall'alto.
+    </p>
+
+    <form id="mutuo-form" class="mutuo-form">
+      <div class="form-grid">
+        <label>Importo iniziale (€)
+          <input type="number" step="0.01" id="f-importo" required>
+        </label>
+        <label>Data apertura mutuo
+          <input type="date" id="f-data-apertura" required>
+        </label>
+        <label>Durata totale (anni)
+          <input type="number" step="1" id="f-durata" required>
+        </label>
+        <label>Capitale residuo (€)
+          <input type="number" step="0.01" id="f-residuo" required>
+        </label>
+        <label>Data del capitale residuo
+          <input type="date" id="f-data-residuo" required>
+        </label>
+        <label>Tasso fisso attuale (%)
+          <input type="number" step="0.01" id="f-tasso-attuale" required>
+        </label>
+        <label>Data fine periodo fisso
+          <input type="date" id="f-data-fine-fisso" required>
+        </label>
+        <label>Spread contrattuale (%)
+          <input type="number" step="0.01" id="f-spread" required>
+        </label>
+      </div>
+      <div class="form-actions">
+        <button type="submit">Ricalcola</button>
+        <button type="button" id="btn-reset">Ripristina valori di esempio</button>
+      </div>
+    </form>
+
+    <div class="result-block" id="result-block" hidden>
+
+      <div class="stat-row">
+        <div class="stat-tile">
+          <span class="stat-label">Rata attuale stimata</span>
+          <span class="stat-value" id="res-rata-attuale">–</span>
+          <span class="stat-meta">ammortamento alla francese</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-label">Capitale proiettato a fine tasso fisso</span>
+          <span class="stat-value" id="res-capitale-proiettato">–</span>
+          <span class="stat-meta" id="res-countdown">–</span>
+        </div>
+      </div>
+
+      <h3>Le due opzioni a fine periodo fisso</h3>
+      <p class="card-intro">
+        Stima basata sugli <strong>ultimi valori di indice raccolti oggi</strong> — non sono i valori reali che si
+        applicheranno alla scadenza, che dipenderanno dal mercato in quel momento. Regola: indice arrotondato per
+        eccesso allo 0,10% più vicino, più spread, mai sotto il valore dello spread stesso.
+      </p>
+
+      <div class="scenario-row">
+        <div class="scenario-tile scenario-fisso">
+          <h4>Resto fisso</h4>
+          <p class="scenario-formula" id="fisso-formula">IRS 3A – + spread –</p>
+          <span class="scenario-rate" id="fisso-tasso">–</span>
+          <span class="scenario-payment" id="fisso-rata">–</span>
+        </div>
+        <div class="scenario-tile scenario-variabile">
+          <h4>Passo a variabile</h4>
+          <p class="scenario-formula" id="variabile-formula">Euribor 6M – + spread –</p>
+          <span class="scenario-rate" id="variabile-tasso">–</span>
+          <span class="scenario-payment" id="variabile-rata">–</span>
+        </div>
+      </div>
+
+      <div class="chart-box chart-box--small">
+        <canvas id="scenario-chart" role="img" aria-label="Confronto tra rata attuale, scenario fisso e scenario variabile"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <div class="wrap">
+    <p><strong>Fonti dati:</strong></p>
+    <ul>
+      <li>Euribor 6 mesi (fixing giornaliero EMMI) — <a href="https://www.euribor-rates.eu/en/current-euribor-rates/3/euribor-rate-6-months/" target="_blank" rel="noopener">euribor-rates.eu</a></li>
+      <li>IRS / Eurirs 3 anni (dato di mercato aggregato) — <a href="https://casaninja.it/tassi/irs/3-anni" target="_blank" rel="noopener">casaninja.it</a></li>
+      <li>Media mensile ufficiale Euribor 6M — <a href="https://data.ecb.europa.eu/" target="_blank" rel="noopener">Banca Centrale Europea, ECB Data Portal</a></li>
+    </ul>
+    <p>Aggiornamento automatico giornaliero tramite GitHub Actions. Nessun dato personale è salvato in questo repository. Questo strumento non costituisce consulenza finanziaria: verifica sempre i valori contrattuali con la tua banca.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
