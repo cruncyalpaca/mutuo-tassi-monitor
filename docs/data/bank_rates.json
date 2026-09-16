@@ -1,15 +1,15 @@
 {
-  "aggiornato": "2026-09-15",
+  "aggiornato": "2026-09-16",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
     {
       "banca": "Banco BPM",
-      "prodotto": "Mutuo You Giovani Green Consap Tasso Variabile",
-      "tipo_tasso": "variabile",
-      "tan": 2.76,
-      "taeg": 2.85,
-      "rata_mensile": 814.36,
+      "prodotto": "Mutuo You Giovani Green Fondo di Garanzia CONSAP",
+      "tipo_tasso": "fisso",
+      "tan": 3.82,
+      "taeg": 3.94,
+      "rata_mensile": 894.88,
       "durata_anni": 20,
       "surroga": false
     },
@@ -80,16 +80,6 @@
       "tan": 3.3,
       "taeg": 3.43,
       "rata_mensile": 569.74,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
-      "tipo_tasso": "variabile",
-      "tan": 3.5,
-      "taeg": 3.65,
-      "rata_mensile": 579.86,
       "durata_anni": 20,
       "surroga": true
     },
