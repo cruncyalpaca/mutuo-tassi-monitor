@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-17",
+  "aggiornato": "2026-09-18",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
@@ -44,6 +44,36 @@
       "surroga": false
     },
     {
+      "banca": "Banca Monte dei Paschi di Siena",
+      "prodotto": "Mutuo MPS Mio Surroga con garanzia CONSAP",
+      "tipo_tasso": "variabile",
+      "tan": 2.55,
+      "taeg": 2.74,
+      "rata_mensile": 532.24,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
+      "banca": "Banca Sella",
+      "prodotto": "Mutuo Surroga a Tasso Variabile Green",
+      "tipo_tasso": "variabile",
+      "tan": 3.15,
+      "taeg": 3.34,
+      "rata_mensile": 562.14,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
+      "banca": "Crédit Agricole",
+      "prodotto": "Mutuo CA Flexi TV Surroga",
+      "tipo_tasso": "variabile",
+      "tan": 3.15,
+      "taeg": 3.36,
+      "rata_mensile": 562.29,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
       "banca": "Intesa Sanpaolo",
       "prodotto": "XME Mutuo Surroga Green (Coupon Offerta Mutui)",
       "tipo_tasso": "fisso",
@@ -54,21 +84,21 @@
       "surroga": true
     },
     {
-      "banca": "Crédit Agricole",
-      "prodotto": "Mutuo CA Flexi (Classi A e B)",
-      "tipo_tasso": "fisso",
+      "banca": "Banco di Sardegna",
+      "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
+      "tipo_tasso": "variabile",
       "tan": 3.5,
-      "taeg": 3.73,
-      "rata_mensile": 579.96,
+      "taeg": 3.65,
+      "rata_mensile": 579.86,
       "durata_anni": 20,
-      "surroga": false
+      "surroga": true
     },
     {
-      "banca": "Banca Sella",
-      "prodotto": "Mutuo Surroga a Tasso Fisso Green",
-      "tipo_tasso": "fisso",
+      "banca": "BPER",
+      "prodotto": "Mutuo con surrogazione a Tasso Variabile Vantaggio Opzione",
+      "tipo_tasso": "variabile",
       "tan": 3.55,
-      "taeg": 3.76,
+      "taeg": 3.73,
       "rata_mensile": 582.53,
       "durata_anni": 20,
       "surroga": true
@@ -80,6 +110,36 @@
       "tan": 3.09,
       "taeg": 3.32,
       "rata_mensile": 559.11,
+      "durata_anni": 20,
+      "surroga": false
+    },
+    {
+      "banca": "BPER",
+      "prodotto": "Mutuo Green a Sal",
+      "tipo_tasso": "fisso",
+      "tan": 3.2,
+      "taeg": 3.42,
+      "rata_mensile": 564.66,
+      "durata_anni": 20,
+      "surroga": false
+    },
+    {
+      "banca": "Banco di Sardegna",
+      "prodotto": "Mutuo a Tasso Fisso PENISOLA",
+      "tipo_tasso": "fisso",
+      "tan": 3.4,
+      "taeg": 3.7,
+      "rata_mensile": 574.83,
+      "durata_anni": 20,
+      "surroga": false
+    },
+    {
+      "banca": "Banco BPM",
+      "prodotto": "Mutuo Casa Tasso Fisso Last Minute Green",
+      "tipo_tasso": "fisso",
+      "tan": 3.72,
+      "taeg": 3.98,
+      "rata_mensile": 591.38,
       "durata_anni": 20,
       "surroga": false
     },
