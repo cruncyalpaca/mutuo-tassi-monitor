@@ -1,15 +1,15 @@
 {
-  "aggiornato": "2026-09-30",
+  "aggiornato": "2026-10-01",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
     {
       "banca": "Banco BPM",
-      "prodotto": "Mutuo You Giovani Green Consap Tasso Variabile",
-      "tipo_tasso": "variabile",
-      "tan": 2.76,
-      "taeg": 2.85,
-      "rata_mensile": 814.36,
+      "prodotto": "Mutuo You Giovani Green Fondo di Garanzia CONSAP",
+      "tipo_tasso": "fisso",
+      "tan": 4.07,
+      "taeg": 4.2,
+      "rata_mensile": 914.27,
       "durata_anni": 20,
       "surroga": false
     },
@@ -17,9 +17,9 @@
       "banca": "Intesa Sanpaolo",
       "prodotto": "XME Mutuo Green (Coupon Offerta Tasso FIsso)",
       "tipo_tasso": "fisso",
-      "tan": 3.85,
-      "taeg": 4.1,
-      "rata_mensile": 897.16,
+      "tan": 4.03,
+      "taeg": 4.29,
+      "rata_mensile": 911.34,
       "durata_anni": 20,
       "surroga": false
     },
@@ -28,7 +28,7 @@
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
       "tan": 5.0,
-      "taeg": 5.44,
+      "taeg": 5.45,
       "rata_mensile": 659.96,
       "durata_anni": 20,
       "surroga": false
@@ -38,7 +38,7 @@
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
       "tan": 5.0,
-      "taeg": 5.67,
+      "taeg": 5.68,
       "rata_mensile": 659.96,
       "durata_anni": 20,
       "surroga": false
@@ -47,19 +47,9 @@
       "banca": "Crédit Agricole",
       "prodotto": "Mutuo CA Flexi TV Surroga",
       "tipo_tasso": "variabile",
-      "tan": 3.15,
-      "taeg": 3.35,
-      "rata_mensile": 562.29,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Intesa Sanpaolo",
-      "prodotto": "XME Mutuo Surroga Green (Coupon Offerta Mutui)",
-      "tipo_tasso": "fisso",
-      "tan": 3.3,
-      "taeg": 3.43,
-      "rata_mensile": 569.74,
+      "tan": 3.28,
+      "taeg": 3.49,
+      "rata_mensile": 568.82,
       "durata_anni": 20,
       "surroga": true
     },
@@ -74,34 +64,34 @@
       "surroga": true
     },
     {
+      "banca": "Intesa Sanpaolo",
+      "prodotto": "XME Mutuo Surroga Green (Coupon Offerta Mutui)",
+      "tipo_tasso": "fisso",
+      "tan": 3.48,
+      "taeg": 3.62,
+      "rata_mensile": 578.93,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
       "banca": "Banco di Sardegna",
       "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
       "tipo_tasso": "variabile",
       "tan": 3.5,
-      "taeg": 3.64,
+      "taeg": 3.65,
       "rata_mensile": 579.86,
       "durata_anni": 20,
       "surroga": true
     },
     {
-      "banca": "BPER",
-      "prodotto": "Mutuo con surrogazione a Tasso Variabile Vantaggio Opzione",
+      "banca": "Banco BPM",
+      "prodotto": "Mutuo Promo Tasso Variabile Green",
       "tipo_tasso": "variabile",
-      "tan": 3.55,
-      "taeg": 3.73,
-      "rata_mensile": 582.53,
+      "tan": 2.72,
+      "taeg": 2.97,
+      "rata_mensile": 540.44,
       "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banca Monte dei Paschi di Siena",
-      "prodotto": "Mutuo MPS Mio Surroga con garanzia CONSAP",
-      "tipo_tasso": "fisso",
-      "tan": 3.76,
-      "taeg": 3.99,
-      "rata_mensile": 593.41,
-      "durata_anni": 20,
-      "surroga": true
+      "surroga": false
     },
     {
       "banca": "Crédit Agricole",
@@ -114,11 +104,31 @@
       "surroga": false
     },
     {
+      "banca": "Banco di Sardegna",
+      "prodotto": "Mutuo Facile - Tasso Variabile Euribor PENISOLA",
+      "tipo_tasso": "variabile",
+      "tan": 3.25,
+      "taeg": 3.57,
+      "rata_mensile": 567.09,
+      "durata_anni": 20,
+      "surroga": false
+    },
+    {
+      "banca": "BPER",
+      "prodotto": "Mutuo a Tasso Variabile Vantaggio Opzione",
+      "tipo_tasso": "variabile",
+      "tan": 3.3,
+      "taeg": 3.66,
+      "rata_mensile": 569.74,
+      "durata_anni": 20,
+      "surroga": false
+    },
+    {
       "banca": "ING",
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
       "tan": 5.5,
-      "taeg": 5.97,
+      "taeg": 5.98,
       "rata_mensile": 687.89,
       "durata_anni": 20,
       "surroga": false
