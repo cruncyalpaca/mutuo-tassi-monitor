@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-10-04",
+  "aggiornato": "2026-10-05",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
@@ -27,9 +27,9 @@
       "banca": "ING",
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
-      "tan": 5.13,
-      "taeg": 5.58,
-      "rata_mensile": 667.16,
+      "tan": 4.81,
+      "taeg": 5.25,
+      "rata_mensile": 649.5,
       "durata_anni": 20,
       "surroga": false
     },
@@ -37,9 +37,9 @@
       "banca": "ING",
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
-      "tan": 5.13,
-      "taeg": 5.82,
-      "rata_mensile": 667.16,
+      "tan": 4.81,
+      "taeg": 5.47,
+      "rata_mensile": 649.5,
       "durata_anni": 20,
       "surroga": false
     },
@@ -74,46 +74,6 @@
       "surroga": true
     },
     {
-      "banca": "BPER",
-      "prodotto": "Mutuo con surrogazione a Tasso Fisso Green",
-      "tipo_tasso": "fisso",
-      "tan": 3.45,
-      "taeg": 3.65,
-      "rata_mensile": 577.39,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
-      "tipo_tasso": "variabile",
-      "tan": 3.71,
-      "taeg": 3.86,
-      "rata_mensile": 590.81,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banca Monte dei Paschi di Siena",
-      "prodotto": "Mutuo MPS Mio Surroga con garanzia CONSAP",
-      "tipo_tasso": "fisso",
-      "tan": 4.02,
-      "taeg": 4.26,
-      "rata_mensile": 607.03,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banco BPM",
-      "prodotto": "Mutuo Promo Tasso Variabile Green",
-      "tipo_tasso": "variabile",
-      "tan": 2.89,
-      "taeg": 3.15,
-      "rata_mensile": 549.31,
-      "durata_anni": 20,
-      "surroga": false
-    },
-    {
       "banca": "Crédit Agricole",
       "prodotto": "Mutuo CA Flexi (Classi A e B)",
       "tipo_tasso": "fisso",
@@ -124,32 +84,12 @@
       "surroga": false
     },
     {
-      "banca": "BPER",
-      "prodotto": "Mutuo a Tasso Variabile Vantaggio Opzione",
-      "tipo_tasso": "variabile",
-      "tan": 3.3,
-      "taeg": 3.66,
-      "rata_mensile": 569.74,
-      "durata_anni": 20,
-      "surroga": false
-    },
-    {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile - Tasso Variabile Euribor PENISOLA",
-      "tipo_tasso": "variabile",
-      "tan": 3.46,
-      "taeg": 3.8,
-      "rata_mensile": 577.91,
-      "durata_anni": 20,
-      "surroga": false
-    },
-    {
       "banca": "ING",
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
-      "tan": 5.63,
-      "taeg": 6.11,
-      "rata_mensile": 695.25,
+      "tan": 5.31,
+      "taeg": 5.77,
+      "rata_mensile": 677.2,
       "durata_anni": 20,
       "surroga": false
     }
