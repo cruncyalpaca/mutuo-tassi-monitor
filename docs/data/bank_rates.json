@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-10-07",
+  "aggiornato": "2026-10-08",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
@@ -44,16 +44,6 @@
       "surroga": false
     },
     {
-      "banca": "Banca Monte dei Paschi di Siena",
-      "prodotto": "Mutuo MPS Mio Surroga con garanzia CONSAP",
-      "tipo_tasso": "variabile",
-      "tan": 2.74,
-      "taeg": 2.94,
-      "rata_mensile": 541.67,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
       "banca": "Crédit Agricole",
       "prodotto": "Mutuo CA Flexi TV Surroga",
       "tipo_tasso": "variabile",
@@ -80,26 +70,6 @@
       "tan": 3.5,
       "taeg": 3.7,
       "rata_mensile": 579.96,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "BPER",
-      "prodotto": "Mutuo con surrogazione a Tasso Variabile Vantaggio Opzione",
-      "tipo_tasso": "variabile",
-      "tan": 3.55,
-      "taeg": 3.73,
-      "rata_mensile": 582.53,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
-      "tipo_tasso": "variabile",
-      "tan": 3.71,
-      "taeg": 3.86,
-      "rata_mensile": 590.81,
       "durata_anni": 20,
       "surroga": true
     },
