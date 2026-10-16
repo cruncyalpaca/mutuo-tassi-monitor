@@ -1,15 +1,15 @@
 {
-  "aggiornato": "2026-10-15",
+  "aggiornato": "2026-10-16",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
     {
       "banca": "Banco BPM",
-      "prodotto": "Mutuo You Giovani Green Consap Tasso Variabile",
-      "tipo_tasso": "variabile",
-      "tan": 2.94,
-      "taeg": 3.04,
-      "rata_mensile": 827.7,
+      "prodotto": "Mutuo You Giovani Green Fondo di Garanzia CONSAP",
+      "tipo_tasso": "fisso",
+      "tan": 4.07,
+      "taeg": 4.2,
+      "rata_mensile": 914.27,
       "durata_anni": 20,
       "surroga": false
     },
@@ -44,6 +44,16 @@
       "surroga": false
     },
     {
+      "banca": "Crédit Agricole",
+      "prodotto": "Mutuo CA Flexi TV Surroga",
+      "tipo_tasso": "variabile",
+      "tan": 3.28,
+      "taeg": 3.49,
+      "rata_mensile": 568.82,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
       "banca": "Intesa Sanpaolo",
       "prodotto": "XME Mutuo Surroga Green (Coupon Offerta Mutui)",
       "tipo_tasso": "fisso",
@@ -54,42 +64,12 @@
       "surroga": true
     },
     {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile Fisso Surroga PENISOLA Classi A, B e C",
-      "tipo_tasso": "fisso",
-      "tan": 3.55,
-      "taeg": 3.7,
-      "rata_mensile": 582.53,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Crédit Agricole",
-      "prodotto": "Mutuo CA Flexi (Classi A e B)",
-      "tipo_tasso": "fisso",
-      "tan": 3.5,
-      "taeg": 3.73,
-      "rata_mensile": 579.96,
-      "durata_anni": 20,
-      "surroga": false
-    },
-    {
-      "banca": "BPER",
-      "prodotto": "Mutuo con surrogazione a Tasso Fisso Green",
-      "tipo_tasso": "fisso",
-      "tan": 3.55,
-      "taeg": 3.75,
-      "rata_mensile": 582.53,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
       "banca": "Banca Sella",
-      "prodotto": "Mutuo Surroga a Tasso Fisso Green",
-      "tipo_tasso": "fisso",
-      "tan": 3.55,
-      "taeg": 3.76,
-      "rata_mensile": 582.53,
+      "prodotto": "Mutuo Surroga a Tasso Variabile Green",
+      "tipo_tasso": "variabile",
+      "tan": 3.5,
+      "taeg": 3.7,
+      "rata_mensile": 579.96,
       "durata_anni": 20,
       "surroga": true
     },
