@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-10-28",
+  "aggiornato": "2026-10-29",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
@@ -28,7 +28,7 @@
       "prodotto": "Mutuo Arancio",
       "tipo_tasso": "fisso",
       "tan": 4.81,
-      "taeg": 5.25,
+      "taeg": 5.24,
       "rata_mensile": 649.5,
       "durata_anni": 20,
       "surroga": false
@@ -44,32 +44,62 @@
       "surroga": false
     },
     {
-      "banca": "Crédit Agricole",
-      "prodotto": "Mutuo CA Flexi TV Surroga",
-      "tipo_tasso": "variabile",
-      "tan": 3.28,
-      "taeg": 3.49,
-      "rata_mensile": 568.82,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
       "banca": "Intesa Sanpaolo",
       "prodotto": "XME Mutuo Surroga Green (Coupon Offerta Mutui)",
       "tipo_tasso": "fisso",
       "tan": 3.48,
-      "taeg": 3.62,
+      "taeg": 3.61,
       "rata_mensile": 578.93,
       "durata_anni": 20,
       "surroga": true
     },
     {
-      "banca": "Banca Sella",
-      "prodotto": "Mutuo Surroga a Tasso Variabile Green",
-      "tipo_tasso": "variabile",
-      "tan": 3.5,
+      "banca": "Banco di Sardegna",
+      "prodotto": "Mutuo Facile Fisso Surroga PENISOLA Classi A, B e C",
+      "tipo_tasso": "fisso",
+      "tan": 3.55,
       "taeg": 3.7,
+      "rata_mensile": 582.53,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
+      "banca": "Crédit Agricole",
+      "prodotto": "Mutuo CA Flexi (Classi A e B)",
+      "tipo_tasso": "fisso",
+      "tan": 3.5,
+      "taeg": 3.73,
       "rata_mensile": 579.96,
+      "durata_anni": 20,
+      "surroga": false
+    },
+    {
+      "banca": "BPER",
+      "prodotto": "Mutuo con surrogazione a Tasso Fisso Green",
+      "tipo_tasso": "fisso",
+      "tan": 3.55,
+      "taeg": 3.75,
+      "rata_mensile": 582.53,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
+      "banca": "Banca Sella",
+      "prodotto": "Mutuo Surroga a Tasso Fisso Green",
+      "tipo_tasso": "fisso",
+      "tan": 3.55,
+      "taeg": 3.75,
+      "rata_mensile": 582.53,
+      "durata_anni": 20,
+      "surroga": true
+    },
+    {
+      "banca": "Banca Monte dei Paschi di Siena",
+      "prodotto": "Mutuo MPS Mio Surroga con garanzia CONSAP",
+      "tipo_tasso": "fisso",
+      "tan": 4.02,
+      "taeg": 4.26,
+      "rata_mensile": 607.03,
       "durata_anni": 20,
       "surroga": true
     },
@@ -78,7 +108,7 @@
       "prodotto": "Mutuo CA Flexi (Classi A e B)",
       "tipo_tasso": "fisso",
       "tan": 2.99,
-      "taeg": 3.22,
+      "taeg": 3.21,
       "rata_mensile": 554.1,
       "durata_anni": 20,
       "surroga": false
@@ -88,7 +118,7 @@
       "prodotto": "Mutuo Green a Sal",
       "tipo_tasso": "fisso",
       "tan": 3.4,
-      "taeg": 3.65,
+      "taeg": 3.64,
       "rata_mensile": 574.83,
       "durata_anni": 20,
       "surroga": false
@@ -98,7 +128,7 @@
       "prodotto": "Mutuo a Tasso Fisso PENISOLA",
       "tipo_tasso": "fisso",
       "tan": 3.7,
-      "taeg": 4.02,
+      "taeg": 3.98,
       "rata_mensile": 590.29,
       "durata_anni": 20,
       "surroga": false
