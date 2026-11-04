@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-03",
+  "aggiornato": "2026-11-04",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
@@ -64,21 +64,21 @@
       "surroga": true
     },
     {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile Fisso Surroga PENISOLA Classi A, B e C",
-      "tipo_tasso": "fisso",
-      "tan": 3.55,
+      "banca": "Banca Sella",
+      "prodotto": "Mutuo Surroga a Tasso Variabile Green",
+      "tipo_tasso": "variabile",
+      "tan": 3.5,
       "taeg": 3.7,
-      "rata_mensile": 582.53,
+      "rata_mensile": 579.96,
       "durata_anni": 20,
       "surroga": true
     },
     {
-      "banca": "Banca Sella",
-      "prodotto": "Mutuo Surroga a Tasso Fisso Green",
+      "banca": "BPER",
+      "prodotto": "Mutuo con surrogazione a Tasso Fisso Green",
       "tipo_tasso": "fisso",
       "tan": 3.55,
-      "taeg": 3.76,
+      "taeg": 3.75,
       "rata_mensile": 582.53,
       "durata_anni": 20,
       "surroga": true
@@ -94,12 +94,12 @@
       "surroga": true
     },
     {
-      "banca": "BPER",
-      "prodotto": "Mutuo con surrogazione a Tasso Variabile Vantaggio Opzione",
+      "banca": "Banco di Sardegna",
+      "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
       "tipo_tasso": "variabile",
-      "tan": 3.75,
-      "taeg": 3.94,
-      "rata_mensile": 592.89,
+      "tan": 3.69,
+      "taeg": 3.85,
+      "rata_mensile": 589.93,
       "durata_anni": 20,
       "surroga": true
     },
