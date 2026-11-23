@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-22",
+  "aggiornato": "2026-11-23",
   "fonte": "https://www.telemutuo.it/",
   "profilo_esempio": "Acquisto prima casa, finanziamento 100%, immobile 150.000€, durata 20 anni",
   "offerte": [
@@ -44,16 +44,6 @@
       "surroga": false
     },
     {
-      "banca": "Banca Monte dei Paschi di Siena",
-      "prodotto": "Mutuo MPS Mio Surroga con garanzia CONSAP",
-      "tipo_tasso": "variabile",
-      "tan": 2.74,
-      "taeg": 2.94,
-      "rata_mensile": 541.77,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
       "banca": "Intesa Sanpaolo",
       "prodotto": "XME Mutuo Surroga Green (Coupon Offerta Mutui)",
       "tipo_tasso": "fisso",
@@ -80,26 +70,6 @@
       "tan": 3.3,
       "taeg": 3.5,
       "rata_mensile": 569.74,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "Banco di Sardegna",
-      "prodotto": "Mutuo Facile Variabile Surroga PENISOLA",
-      "tipo_tasso": "variabile",
-      "tan": 3.69,
-      "taeg": 3.85,
-      "rata_mensile": 589.93,
-      "durata_anni": 20,
-      "surroga": true
-    },
-    {
-      "banca": "BPER",
-      "prodotto": "Mutuo con surrogazione a Tasso Variabile Vantaggio Opzione",
-      "tipo_tasso": "variabile",
-      "tan": 3.75,
-      "taeg": 3.94,
-      "rata_mensile": 592.89,
       "durata_anni": 20,
       "surroga": true
     },
